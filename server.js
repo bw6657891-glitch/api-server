@@ -1,5 +1,5 @@
 /**
- * server.js - 阿里云图像编辑API（Vercel优化版）
+ * server.js - 阿里云图像编辑API（Vercel）
  */
 
 const express = require("express");
@@ -191,4 +191,5 @@ app.post("/api/image-edit", async (req, res) => {
 });
 
 // 导出 Express 应用
+
 module.exports = app;
