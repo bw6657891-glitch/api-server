@@ -2,15 +2,17 @@
   "name": "api-server",
   "version": "1.0.0",
   "description": "阿里云图像编辑API服务",
-  "main": "server.js",
+  "main": "api/health.js",
   "scripts": {
     "start": "node server.js",
-    "vercel-build": "echo 'Building for Vercel...'"
+    "dev": "vercel dev"
   },
   "dependencies": {
-    "express": "^4.18.2",
     "axios": "^1.6.2",
     "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "vercel": "^28.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
