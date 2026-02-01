@@ -1,11 +1,16 @@
 {
   "name": "api-server",
   "version": "1.0.0",
-  "type": "module",
-  "engines": {
-    "node": ">=18"
-  },
+  "description": "古法造纸非遗图像编辑API",
+  "main": "api/health.js",
   "scripts": {
+    "start": "node api/health.js",
     "dev": "vercel dev"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
