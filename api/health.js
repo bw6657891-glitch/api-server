@@ -1,37 +1,33 @@
-// api/health.js
 module.exports = async (req, res) => {
-    // 设置CORS头
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
-    
-    // 处理预检请求
-    if (req.method === 'OPTIONS') {
-        res.status(200).end();
-        return;
-    }
-    
-    // 只处理GET请求
-    if (req.method !== 'GET') {
-        return res.status(405).json({ 
-            success: false, 
-            error: '只支持GET请求' 
-        });
-    }
-    
-    // 返回健康状态
-    return res.status(200).json({
-        success: true,
-        status: "running",
-        service: "阿里云图像编辑API",
-        environment: process.env.NODE_ENV || "production",
-        timestamp: new Date().toISOString(),
-        uptime: process.uptime(),
-        endpoints: {
-            health: "/api/health",
-            styles: "/api/styles",
-            imageEdit: "/api/image-edit"
-        }
-    });
+  // 设置响应头
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  
+  // 处理OPTIONS预检请求
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+  
+  // 只响应GET请求
+  if (req.method !== 'GET') {
+    res.status(405).json({ error: 'Method not allowed' });
+    return;
+  }
+  
+  // 返回健康状态信息
+  res.status(200).json({
+    status: 'healthy',
+    service: '古法造纸非遗图像编辑API',
+    timestamp: new Date().toISOString(),
+    version: '1.0.0',
+    environment: process.env.NODE_ENV || 'production',
+    endpoints: [
+      { path: '/api/health', method: 'GET', description: '健康检查' },
+      { path: '/api/styles', method: 'GET', description: '获取可用风格' },
+      { path: '/api/image-edit', method: 'POST', description: '图像风格转换' }
+    ]
+  });
 };
