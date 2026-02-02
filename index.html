@@ -323,41 +323,40 @@
     </section>
 
     <!-- 技艺科普：交互标签页 -->
-    <section id="process" class="py-32 bg-stone-50">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl font-black mb-4">造纸四时 · 技艺厅</h2>
-                <p class="text-stone-400 text-sm tracking-widest uppercase">每一个步骤，都是对大自然的敬畏与提炼</p>
-            </div>
+<section id="process" class="py-32 bg-stone-50">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-black mb-4">造纸四时 · 技艺厅</h2>
+            <p class="text-stone-400 text-sm tracking-widest uppercase">每一个步骤，都是对大自然的敬畏与提炼</p>
+        </div>
 
-            <div class="flex justify-center gap-12 border-b border-stone-100 mb-16 overflow-x-auto pb-4">
-                <button onclick="showProcess(1)" id="proc-1" class="proc-btn museum-tab-active px-6 py-2 rounded-full text-xs font-bold transition-all">备料与润料</button>
-                <button onclick="showProcess(2)" id="proc-2" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">制浆与打浆</button>
-                <button onclick="showProcess(3)" id="proc-3" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">抄造与纸药</button>
-                <button onclick="showProcess(4)" id="proc-4" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">烘干与整理</button>
-            </div>
+        <div class="flex justify-center gap-12 border-b border-stone-100 mb-16 overflow-x-auto pb-4">
+            <button onclick="showProcess(5)" id="proc-5" class="proc-btn museum-tab-active px-6 py-2 rounded-full text-xs font-bold transition-all">《天工开物》工艺流程</button>
+            <button onclick="showProcess(1)" id="proc-1" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">备料与润料</button>
+            <button onclick="showProcess(2)" id="proc-2" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">制浆与打浆</button>
+            <button onclick="showProcess(3)" id="proc-3" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">抄造与纸药</button>
+            <button onclick="showProcess(4)" id="proc-4" class="proc-btn px-6 py-2 rounded-full text-xs font-bold text-stone-400 transition-all">烘干与整理</button>
+        </div>
 
-            <div id="process-content" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center min-h-[400px]">
-                <div class="space-y-6">
-                    <h3 id="step-title" class="text-3xl font-bold">备料与润料</h3>
-                    <p id="step-desc" class="text-slate-500 leading-loose italic">备料与润料是古法造纸与自然对话的初始篇章，旨在从草木中唤醒纸张的魂魄。匠人遵循"皮取于山，草取于泽"的古训，于特定时节上山选取青檀嫩枝，下田采收沙田长秆，或采集楮、桑、竹等植物原料。这些原料需经历一系列温和而坚定的自然转化。树皮需在溪流活水中浸沤数日，借助水温和微生物之力初步软化；随后摊于山石，承受日晒夜露，在寒暑交替间松弛纤维。稻草则铺陈于坡地，经风霜雨雪自然漂白，完成脱脂。其后，原料与石灰或草木灰一同入甑，以文火慢蒸数昼夜，彻底分离木质素与杂质，只留取纯净的植物纤维。整个过程，实则是以水之润泽、日之能量、火之温和，完成一场对植物生命结构的重塑与提纯。这不仅是对原料的物理处理，更是匠人对"天时、地气、材美"的虔诚顺应。唯有经过这般充分的备料与润料，方能萃取出造纸的真正基底。那一缕缕洁白、柔韧、富有生命力的纸之灵魂，为后续成纸奠定至关重要的物质本源。</p>
-                    <div id="step-details" class="space-y-4 pt-6">
-                        <div class="flex items-center gap-4 p-5 bg-white shadow-sm rounded-2xl">
-                            <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-full flex items-center justify-center font-bold">1</div>
-                            <span class="text-sm"><b>采料：</b>选取青檀皮、沙田稻草等</span>
-                        </div>
-                        <div class="flex items-center gap-4 p-5 bg-white shadow-sm rounded-2xl">
-                            <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-full flex items-center justify-center font-bold">2</div>
-                            <span class="text-sm"><b>蒸煮：</b>使用石灰水浸泡去除杂质</span>
-                        </div>
-                    </div>
+        <div id="process-content" class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center min-h-[400px]">
+            <div class="space-y-6">
+                <h3 id="step-title" class="text-3xl font-bold">《天工开物》中的古法造纸技艺</h3>
+                <p id="step-desc" class="text-slate-500 leading-loose italic">《天工开物》“杀青” 篇系统记载了明代古法造纸工艺，以竹纸为主，兼述皮纸、麻纸，流程严谨且具科学性，是古代造纸技术的珍贵实录。造纸以竹料为核心原料，需选嫩竹（竹肉尚白者），于芒种前后砍伐。先将嫩竹截成五尺长的竹段，放入 “徨桶”（浸竹池），用石灰水浸泡百余日，软化纤维并去除胶质；再取出蒸煮，反复漂洗、舂捣，使竹料分解为细腻纸浆。抄纸是最终成纸关键环节，将纸浆注入纸槽，以细竹帘（抄纸器）轻轻抄起，纸浆均匀附着帘面，形成湿纸坯；多层湿纸坯叠放后，用杠杆压榨脱水，再将湿纸逐张揭起，贴于焙笼（或火墙）上烘干，即成纸张。此外，书中还记载树皮、麻头、破布等 “废纸” 再利用工艺，通过石灰处理、蒸煮漂洗，可制皮纸、麻纸，质地坚韧。其工艺既注重原料发酵脱胶，又强调抄纸、干燥的精细操作，完整呈现了我国古代劳动人民的造纸智慧，对后世造纸技术传承和文化传播影响深远。</p>
+                <div id="step-details" class="space-y-4 pt-6">
+                    <!-- 这里是空的，因为第5项没有list内容 -->
                 </div>
-                <div class="bg-paper-texture aspect-square rounded-[3rem] border-8 border-white shadow-2xl flex items-center justify-center relative overflow-hidden image-container">
-                    <img id="step-image" src="https://www.myapisite.online/取材.jpg" alt="古法造纸" class="w-full h-full object-cover process-img">
+            </div>
+            <div class="bg-paper-texture aspect-square rounded-[3rem] border-8 border-white shadow-2xl flex items-center justify-center relative overflow-hidden image-container">
+                <!-- 修改为视频容器 -->
+                <div id="step-media-container" class="w-full h-full flex items-center justify-center">
+                    <video id="step-video" src="https://www.myapisite.online/古法造纸.MP4" controls class="w-full h-full object-cover rounded-[2.5rem]" playsinline>
+                        您的浏览器不支持视频播放
+                    </video>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 调研数据 - 替换为数据分析内容 -->
     <section id="data" class="py-32 bg-stone-900 text-white">
@@ -505,10 +504,14 @@
                     <i class="fas fa-map-marker-alt text-xl"></i>
                 </div>
                 <h4 class="flex items-center justify-between mb-3">地理位置</h4>
-                <!-- 新增 -mt-3 让图片向上移动12px（数值可根据需要调整，-mt-2是8px，-mt-4是16px） -->
-                <img src="https://www.myapisite.online/棠岙村.jpg" class="w-24 h-24 rounded-full border-2 border-white shadow-sm ml-auto -mt-20">
-                <p class="text-stone-500 text-sm leading-relaxed">浙江省宁波市奉化区萧王庙街道棠岙村</p>
-            </div>
+<video 
+  src="https://www.myapisite.online/棠岙村.mp4" 
+  class="w-24 h-24 rounded-full border-2 border-white shadow-sm ml-auto -mt-20 object-cover"
+  autoplay 
+  muted 
+  loop 
+  playsinline
+></video>
             <div class="p-8 bg-white rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
                 <div class="w-12 h-12 bg-[#8b2b22]/5 text-[#8b2b22] rounded-xl flex items-center justify-center mb-6">
                     <i class="fas fa-history text-xl"></i>
@@ -527,81 +530,112 @@
             </div>
         </div>
 
+    <div class="max-w-6xl mx-auto">
         <!-- 案例详细内容：优化图文比例与排版 -->
-        <div class="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-stone-200">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+        <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-stone-200 flex flex-col">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2">
                 
-                <!-- 文字内容区 -->
-                <div class="p-10 md:p-16 space-y-10">
-                    <div>
-                        <h3 class="text-3xl font-bold text-stone-900 mb-8 serif relative inline-block">
-                            纸内乾坤：从边缘到核心的转型
-                            <span class="absolute -bottom-2 left-0 w-12 h-1 bg-[#8b2b22]"></span>
+                <!-- 左侧：文字内容区 (Paper Texture) -->
+                <div class="p-8 md:p-14 lg:p-16 space-y-12 paper-texture bg-white">
+                    <div class="relative">
+                        <span class="text-[#8b2b22]/10 text-6xl font-black absolute -top-8 -left-4 pointer-events-none select-none serif">棠岙竹纸</span>
+                        <h3 class="text-3xl md:text-3xl font-bold text-stone-900 mb-8 serif relative inline-block leading-tight">
+                            纸内乾坤：<br class="md:hidden">跨越千年的守候
+                            <span class="absolute -bottom-3 left-0 w-16 h-1.5 bg-[#8b2b22] rounded-full"></span>
                         </h3>
-                        <div class="prose prose-stone max-w-none space-y-5">
-                            <p class="text-stone-600 leading-8 text-justify">
-                                棠岙村，古称棠溪，坐落于浙江省宁波市奉化区萧王庙街道，历史源远流长。村庄地处群山环抱之间，竹资源丰富，为传统手工业的发展提供了天然条件，也由此带动了当地的经济与文化繁荣。
-                            </p>
-                            <p class="text-stone-600 leading-8 text-justify">
-                                棠岙纸以嫩竹为主要原料，其制作讲究时令，须在小满至芒种期间采伐。随后历经腌料、清洗、烧煮、捣料、打浆、抄纸、晒纸等<b>七十二道精细工序</b>，方可制成。
-                            </p>
-                            <p class="text-stone-600 leading-8 text-justify">
-                                这项制作技艺起源于宋元时期，曾盛极一时。然而随着时代变迁，尤其是机制纸业的冲击，手工造纸业日渐式微，至袁恒通先生时，仅存其一家作坊坚守此艺。
-                            </p>
+                        
+                        <div class="prose prose-stone max-w-none">
+                            <div class="space-y-6 text-stone-600 leading-8 text-justify text-base md:text-lg">
+                                <p>
+                                    <span class="text-[#8b2b22] font-bold">棠岙村</span>，古称棠溪，坐落于浙江省宁波市奉化区萧王庙街道。历史源远流长。村庄地处群山环抱之间，竹资源丰富，为传统手工业提供了天然条件，带动了当地的经济与文化繁荣。
+                                </p>
+                                <p>
+                                    棠岙纸以嫩竹为原材，须在小满至芒种期间采伐。随后历经腌料、清洗、烧煮、打浆、抄纸等<span class="inline-block px-2 bg-stone-100 rounded text-stone-900 font-bold border-b-2 border-[#8b2b22]">七十二道精细工序</span>，方可制成。
+                                </p>
+                                <p class="text-sm md:text-base opacity-80">
+                                    这项技艺起源于宋元时期，曾盛极一时。然而随着时代变迁，尤其是机制纸业的冲击，至袁恒通先生时，仅存其一家作坊坚守此艺。
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- 核心价值卡片 -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-                        <div class="p-6 bg-[#f8f4ec] rounded-2xl border border-[#e8d5b5] hover:bg-[#f3eee4] transition-colors">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 pt-4">
+                        <div class="group p-6 bg-[#f8f4ec] rounded-2xl border border-[#e8d5b5] hover:border-[#8b2b22] hover:shadow-lg transition-all duration-300">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#8b2b22]/20">
+                                <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                                     <i class="fas fa-book-open text-sm"></i>
                                 </div>
                                 <h4 class="font-bold text-stone-800">古籍修复专用</h4>
                             </div>
-                            <p class="text-xs text-stone-600 leading-relaxed">
+                            <p class="text-xs text-stone-600 leading-relaxed group-hover:text-stone-900 transition-colors">
                                 1997年研制出与古籍质地极近的竹纸，被认定为修复理想用纸，获天一阁及多家图书馆专供认可。
                             </p>
                         </div>
-                        <div class="p-6 bg-[#f8f4ec] rounded-2xl border border-[#e8d5b5] hover:bg-[#f3eee4] transition-colors">
+
+                        <div class="group p-6 bg-[#f8f4ec] rounded-2xl border border-[#e8d5b5] hover:border-[#8b2b22] hover:shadow-lg transition-all duration-300">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#8b2b22]/20">
+                                <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                                     <i class="fas fa-globe-asia text-sm"></i>
                                 </div>
                                 <h4 class="font-bold text-stone-800">国际认可</h4>
                             </div>
-                            <p class="text-xs text-stone-600 leading-relaxed">
+                            <p class="text-xs text-stone-600 leading-relaxed group-hover:text-stone-900 transition-colors">
                                 入选联合国教科文组织"东亚纸张保护方法"项目，获得国内外专家与博物馆的广泛推崇。
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 视觉影像区 -->
-                <div class="bg-stone-50 p-8 lg:p-12 flex flex-col">
-                    <div class="relative flex-grow">
-                        <!-- 图片容器 -->
-                        <div class="h-full rounded-3xl overflow-hidden border-4 border-white shadow-2xl relative group">
-                            <img src="https://www.myapisite.online/天一阁古籍.png" alt="棠岙竹纸制作工艺" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                            <!-- 渐变文字层 -->
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-8">
-                                <p class="text-white text-sm font-medium italic opacity-90">
-                                    <i class="fas fa-info-circle mr-2"></i>棠岙竹纸制作过程：采竹、蒸煮、打浆、抄造
+                <!-- 右侧：视觉影像与附加信息区 -->
+                <div class="bg-stone-50 p-6 md:p-10 lg:p-14 flex flex-col justify-center">
+                    <!-- 视频容器: 强制 16:9 -->
+                    <div class="w-full">
+                        <div class="video-aspect-ratio rounded-3xl overflow-hidden border-[6px] border-white shadow-2xl relative group bg-black">
+                            <video 
+                                src="https://www.myapisite.online/纸为竹生.mp4" 
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                controls
+                                playsinline
+                                preload="metadata"
+                                poster="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&q=80&w=1000"
+                            >
+                                您的浏览器不支持视频播放
+                            </video>
+                            
+                            <!-- 渐变文字层：仅在非播放状态下更明显，或作为悬停提示 -->
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                <p class="text-white text-xs font-medium italic">
+                                    <i class="fas fa-video mr-2"></i>记录：棠岙古法造纸工艺全流程
                                 </p>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- 提示区块：微调边距 -->
-                    <div class="mt-8 p-6 bg-amber-50/80 rounded-2xl border border-amber-200/60 backdrop-blur-sm">
-                        <p class="text-sm text-stone-700 leading-relaxed">
-                            <span class="font-bold text-amber-900 block mb-1">纪录片《纸为竹生》：</span>
-                            2018年，中国美术学院与国美民艺博物馆联合推出，生动展现了这项古老技艺的当代传承。
-                        </p>
+                    <!-- 提示区块：纪录片信息 -->
+                    <div class="mt-10 p-8 bg-amber-50/60 rounded-3xl border border-amber-200/50 backdrop-blur-sm relative overflow-hidden group">
+                        <!-- 背景装饰 -->
+                        <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-film text-8xl text-amber-900"></i>
+                        </div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="flex h-2 w-2 rounded-full bg-amber-500"></span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-amber-800">DOCUMENTARY</span>
+                            </div>
+                            <p class="text-stone-700 leading-relaxed">
+                                <span class="font-bold text-lg text-stone-900 block mb-2">纪录片《纸为竹生》</span>
+                                <span class="text-sm leading-6">2018年，由中国美术学院与国美民艺博物馆联合推出，生动展现了这项古老技艺在当代的守望与传承。</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+    </div>
 
             <!-- 工艺标准与专家评价：整合在主卡片底部 -->
             <div class="bg-stone-50/50 border-t border-stone-100 p-10 md:p-16">
@@ -786,57 +820,105 @@
             listContainer.innerHTML = html;
         }
 
-        // --- 3. 技艺厅交互 ---
-        const processData = {
-            1: { 
-                title: "备料与润料", 
-                desc: "备料与润料是古法造纸与自然对话的初始篇章，旨在从草木中唤醒纸张的魂魄。匠人遵循'皮取于山，草取于泽'的古训，于特定时节上山选取青檀嫩枝，下田采收沙田长秆，或采集楮、桑、竹等植物原料。这些原料需经历一系列温和而坚定的自然转化。树皮需在溪流活水中浸沤数日，借助水温和微生物之力初步软化；随后摊于山石，承受日晒夜露，在寒暑交替间松弛纤维。稻草则铺陈于坡地，经风霜雨雪自然漂白，完成脱脂。其后，原料与石灰或草木灰一同入甑，以文火慢蒸数昼夜，彻底分离木质素与杂质，只留取纯净的植物纤维。整个过程，实则是以水之润泽、日之能量、火之温和，完成一场对植物生命结构的重塑与提纯。这不仅是对原料的物理处理，更是匠人对'天时、地气、材美'的虔诚顺应。唯有经过这般充分的备料与润料，方能萃取出造纸的真正基底。那一缕缕洁白、柔韧、富有生命力的纸之灵魂，为后续成纸奠定至关重要的物质本源。", 
-                list: ["采料：选取青檀皮、稻草", "蒸煮：碱液软化纤维"], 
-                image: "https://www.myapisite.online/取材.jpg" 
-            },
-            2: { 
-                title: "制浆与打浆", 
-                desc: "制浆与打浆是将植物纤维转化为纸浆的核心阶段。蒸煮软化后的纯净纤维被置于石臼之中，在匠人持杵反复舂捣下，纤维束逐渐裂解、帚化，表面形成细腻的绒毛。这并非简单的破碎，而是通过机械力巧妙地打开纤维的氢键结合点，使其在水中更容易交织——这也是纸张强度的来源。舂捣后的纤维需经'漂洗'与'日光漂白'。在流动的清水中揉洗，去除残留杂质；随后将湿浆薄摊于石板或竹帘上曝晒，利用阳光中的紫外线自然氧化褪色，获得柔和的本白。这一过程无需化学添加剂，全凭自然之力。最后，纤维在槽中被调和成均匀的悬浮液，称为'纸药'的植物胶液于此加入，以调节浆料的悬浮性与成纸的质感。匠人依据纸张用途控制打浆的程度：书画纸需轻捣以保留纤维长度，成纸绵润吸墨；实用纸则重舂以求紧密坚实。至此，原本坚韧的植物纤维，终于在人力与时间的共同作用下，蜕变为温顺而充满潜能的纸之母体，等待在竹帘上迎来最终的重生。", 
-                list: ["舂捣：人力使纤维碎裂", "入槽：浆料均匀悬浮"], 
-                image: "https://www.myapisite.online/打浆.jpg" 
-            },
-            3: { 
-                title: "抄造与纸药", 
-                desc: "抄造与纸药，是纸张从液态浆料固化为纤薄页片的神奇一跃，全凭匠人手腕间的微妙掌控。纸浆被倾入石砌的抄纸槽中，此时加入关键媒介——'纸药'。纸药通常是从黄蜀葵、杨桃藤等植物根部提取的黏液，其作用是调节浆液的悬浮度与分散性，使纤维在水中均匀舒展、缓慢沉降，避免过快团聚。匠人手持细密竹帘步入纸槽，以特定角度入水，轻轻晃动前移，随即平稳抬起。这一起一落间，水流滤过帘缝，无数植物纤维则被帘面经纬交织的细线拦截，在帘上均匀交织成湿纸膜。每一张纸的厚薄、纹理与重量，皆取决于匠人入水的深浅、晃帘的节奏与抬帘的速度，是真正'以手度心'的瞬间艺术。随后，湿纸膜被小心揭下，堆叠于板上，称为'纸帖'。纸药在此不仅确保纤维均匀分布，更在相邻纸页间形成一层极薄的水膜，便于后续分张而不粘连。抄纸工序要求匠人心静、眼准、手稳，方能成就'轻似蝉翼白如雪，抖似细绸不闻声'的极致品质。这一过程，正是将无形浆液赋形为有质纸页的'诞生仪式'，每一张纸都承载着手艺人的呼吸与专注，自此纸张有了生命的雏形。", 
-                list: ["捞纸：纤维成膜", "纸药：植物粘液增韧"], 
-                image: "https://www.myapisite.online/抄造.png" 
-            },
-            4: { 
-                title: "烘干与整理", 
-                desc: "烘干与整理是纸张获得稳定肌理与实用形态的最后仪式。湿纸堆经一夜轻压，初步脱水后，便迎来关键工序——'上墙烘干'。匠人用松针刷将湿纸一张张揭起，平整贴于以砖砌成、内通热烟道的'焙墙'上。墙面温度须严格控制在四十至六十度之间，以温和、均匀的热力，使水分透过纸背缓缓蒸发。此过程需时近一日，匠人须时刻巡视，凭经验调整火力，确保纸张均匀收缩而不起皱、不脆裂。这正是'焙纸'的核心：让纸张在恒定的温暖中'醒透'，水分尽去而纤维间的氢键紧密结合，从而获得稳定的物理性状。完全干燥后，纸张被从墙上揭下，进入'整理'工序。依据不同用途，纸张会经受研光、施胶、染色或洒金等处理。最后，工匠依循古制尺寸，以竹刀或裁纸刀进行裁切，边缘齐整，方正有度。至此，一张纸才真正完成了从山间植物到文化载体的全部旅程。烘干与整理使得纸张在热力与人力共同作用下获得新生，以此承载笔墨，对抗时间。", 
-                list: ["贴纸：刷于烘壁", "裁切：依古制分切"], 
-                image: "https://www.myapisite.online/古纸展示.png" 
-            }
-        };
+// --- 3. 技艺厅交互 ---
+const processData = {
+    5: { 
+        title: "《天工开物》中的古法造纸技艺", 
+        desc: "《天工开物》“杀青” 篇系统记载了明代古法造纸工艺，以竹纸为主，兼述皮纸、麻纸，流程严谨且具科学性，是古代造纸技术的珍贵实录。造纸以竹料为核心原料，需选嫩竹（竹肉尚白者），于芒种前后砍伐。先将嫩竹截成五尺长的竹段，放入 “徨桶”（浸竹池），用石灰水浸泡百余日，软化纤维并去除胶质；再取出蒸煮，反复漂洗、舂捣，使竹料分解为细腻纸浆。抄纸是最终成纸关键环节，将纸浆注入纸槽，以细竹帘（抄纸器）轻轻抄起，纸浆均匀附着帘面，形成湿纸坯；多层湿纸坯叠放后，用杠杆压榨脱水，再将湿纸逐张揭起，贴于焙笼（或火墙）上烘干，即成纸张。此外，书中还记载树皮、麻头、破布等 “废纸” 再利用工艺，通过石灰处理、蒸煮漂洗，可制皮纸、麻纸，质地坚韧。其工艺既注重原料发酵脱胶，又强调抄纸、干燥的精细操作，完整呈现了我国古代劳动人民的造纸智慧，对后世造纸技术传承和文化传播影响深远。", 
+        video: "https://www.myapisite.online/古法造纸.MP4",
+        list: []
+    },
+    1: { 
+        title: "备料与润料", 
+        desc: "备料与润料是古法造纸与自然对话的初始篇章，旨在从草木中唤醒纸张的魂魄。匠人遵循'皮取于山，草取于泽'的古训，于特定时节上山选取青檀嫩枝，下田采收沙田长秆，或采集楮、桑、竹等植物原料。这些原料需经历一系列温和而坚定的自然转化。树皮需在溪流活水中浸沤数日，借助水温和微生物之力初步软化；随后摊于山石，承受日晒夜露，在寒暑交替间松弛纤维。稻草则铺陈于坡地，经风霜雨雪自然漂白，完成脱脂。其后，原料与石灰或草木灰一同入甑，以文火慢蒸数昼夜，彻底分离木质素与杂质，只留取纯净的植物纤维。整个过程，实则是以水之润泽、日之能量、火之温和，完成一场对植物生命结构的重塑与提纯。这不仅是对原料的物理处理，更是匠人对'天时、地气、材美'的虔诚顺应。唯有经过这般充分的备料与润料，方能萃取出造纸的真正基底。那一缕缕洁白、柔韧、富有生命力的纸之灵魂，为后续成纸奠定至关重要的物质本源。", 
+        list: ["采料：选取青檀皮、稻草", "蒸煮：碱液软化纤维"], 
+        image: "https://www.myapisite.online/取材.jpg" 
+    },
+    2: { 
+        title: "制浆与打浆", 
+        desc: "制浆与打浆是将植物纤维转化为纸浆的核心阶段。蒸煮软化后的纯净纤维被置于石臼之中，在匠人持杵反复舂捣下，纤维束逐渐裂解、帚化，表面形成细腻的绒毛。这并非简单的破碎，而是通过机械力巧妙地打开纤维的氢键结合点，使其在水中更容易交织——这也是纸张强度的来源。舂捣后的纤维需经'漂洗'与'日光漂白'。在流动的清水中揉洗，去除残留杂质；随后将湿浆薄摊于石板或竹帘上曝晒，利用阳光中的紫外线自然氧化褪色，获得柔和的本白。这一过程无需化学添加剂，全凭自然之力。最后，纤维在槽中被调和成均匀的悬浮液，称为'纸药'的植物胶液于此加入，以调节浆料的悬浮性与成纸的质感。匠人依据纸张用途控制打浆的程度：书画纸需轻捣以保留纤维长度，成纸绵润吸墨；实用纸则重舂以求紧密坚实。至此，原本坚韧的植物纤维，终于在人力与时间的共同作用下，蜕变为温顺而充满潜能的纸之母体，等待在竹帘上迎来最终的重生。", 
+        list: ["舂捣：人力使纤维碎裂", "入槽：浆料均匀悬浮"], 
+        image: "https://www.myapisite.online/打浆.jpg" 
+    },
+    3: { 
+        title: "抄造与纸药", 
+        desc: "抄造与纸药，是纸张从液态浆料固化为纤薄页片的神奇一跃，全凭匠人手腕间的微妙掌控。纸浆被倾入石砌的抄纸槽中，此时加入关键媒介——'纸药'。纸药通常是从黄蜀葵、杨桃藤等植物根部提取的黏液，其作用是调节浆液的悬浮度与分散性，使纤维在水中均匀舒展、缓慢沉降，避免过快团聚。匠人手持细密竹帘步入纸槽，以特定角度入水，轻轻晃动前移，随即平稳抬起。这一起一落间，水流滤过帘缝，无数植物纤维则被帘面经纬交织的细线拦截，在帘上均匀交织成湿纸膜。每一张纸的厚薄、纹理与重量，皆取决于匠人入水的深浅、晃帘的节奏与抬帘的速度，是真正'以手度心'的瞬间艺术。随后，湿纸膜被小心揭下，堆叠于板上，称为'纸帖'。纸药在此不仅确保纤维均匀分布，更在相邻纸页间形成一层极薄的水膜，便于后续分张而不粘连。抄纸工序要求匠人心静、眼准、手稳，方能成就'轻似蝉翼白如雪，抖似细绸不闻声'的极致品质。这一过程，正是将无形浆液赋形为有质纸页的'诞生仪式'，每一张纸都承载着手艺人的呼吸与专注，自此纸张有了生命的雏形。", 
+        list: ["捞纸：纤维成膜", "纸药：植物粘液增韧"], 
+        image: "https://www.myapisite.online/抄造.png" 
+    },
+    4: { 
+        title: "烘干与整理", 
+        desc: "烘干与整理是纸张获得稳定肌理与实用形态的最后仪式。湿纸堆经一夜轻压，初步脱水后，便迎来关键工序——'上墙烘干'。匠人用松针刷将湿纸一张张揭起，平整贴于以砖砌成、内通热烟道的'焙墙'上。墙面温度须严格控制在四十至六十度之间，以温和、均匀的热力，使水分透过纸背缓缓蒸发。此过程需时近一日，匠人须时刻巡视，凭经验调整火力，确保纸张均匀收缩而不起皱、不脆裂。这正是'焙纸'的核心：让纸张在恒定的温暖中'醒透'，水分尽去而纤维间的氢键紧密结合，从而获得稳定的物理性状。完全干燥后，纸张被从墙上揭下，进入'整理'工序。依据不同用途，纸张会经受研光、施胶、染色或洒金等处理。最后，工匠依循古制尺寸，以竹刀或裁纸刀进行裁切，边缘齐整，方正有度。至此，一张纸才真正完成了从山间植物到文化载体的全部旅程。烘干与整理使得纸张在热力与人力共同作用下获得新生，以此承载笔墨，对抗时间。", 
+        list: ["贴纸：刷于烘壁", "裁切：依古制分切"], 
+        image: "https://www.myapisite.online/古纸展示.png" 
+    }
+};
 
-        function showProcess(id) {
-            document.querySelectorAll('.proc-btn').forEach(btn => {
-                btn.classList.remove('museum-tab-active');
-                btn.classList.add('text-stone-400');
-            });
-            document.getElementById(`proc-${id}`).classList.add('museum-tab-active');
-            const data = processData[id];
-            const container = document.getElementById('process-content');
-            container.style.opacity = '0';
-            setTimeout(() => {
-                document.getElementById('step-title').innerText = data.title;
-                document.getElementById('step-desc').innerText = data.desc;
-                document.getElementById('step-image').src = data.image;
-                document.getElementById('step-image').alt = data.title;
-                
-                let html = '';
-                data.list.forEach((item, i) => {
-                    html += `<div class="flex items-center gap-4 p-5 bg-white shadow-sm rounded-2xl"><div class="w-10 h-10 bg-[#8b2b22] text-white rounded-full flex items-center justify-center font-bold">${i+1}</div><span class="text-sm">${item}</span></div>`;
-                });
-                document.getElementById('step-details').innerHTML = html;
-                container.style.opacity = '1';
-            }, 300);
+function showProcess(id) {
+    // 更新标签按钮状态
+    document.querySelectorAll('.proc-btn').forEach(btn => {
+        btn.classList.remove('museum-tab-active');
+        btn.classList.add('text-stone-400');
+    });
+    document.getElementById(`proc-${id}`).classList.remove('text-stone-400');
+    document.getElementById(`proc-${id}`).classList.add('museum-tab-active');
+    
+    const data = processData[id];
+    const container = document.getElementById('process-content');
+    container.style.opacity = '0';
+    
+    setTimeout(() => {
+        // 更新标题和描述
+        document.getElementById('step-title').innerText = data.title;
+        document.getElementById('step-desc').innerText = data.desc;
+        
+        // 更新媒体内容（图片或视频）
+        const mediaContainer = document.getElementById('step-media-container');
+        mediaContainer.innerHTML = '';
+        
+        if (data.video) {
+            // 创建视频元素
+            const video = document.createElement('video');
+            video.src = data.video;
+            video.controls = true; // 显示播放控制条
+            video.playsinline = true; // 移动端内联播放
+            video.classList.add('w-full', 'h-full', 'object-cover', 'rounded-[2.5rem]');
+            mediaContainer.appendChild(video);
+        } else if (data.image) {
+            // 创建图片元素
+            const img = document.createElement('img');
+            img.src = data.image;
+            img.alt = data.title;
+            img.classList.add('w-full', 'h-full', 'object-cover', 'rounded-[2.5rem]');
+            mediaContainer.appendChild(img);
         }
+        
+        // 更新步骤列表
+        const detailsContainer = document.getElementById('step-details');
+        detailsContainer.innerHTML = '';
+        
+        if (data.list && data.list.length > 0) {
+            data.list.forEach((item, i) => {
+                const detailDiv = document.createElement('div');
+                detailDiv.className = 'flex items-center gap-4 p-5 bg-white shadow-sm rounded-2xl';
+                detailDiv.innerHTML = `
+                    <div class="w-10 h-10 bg-[#8b2b22] text-white rounded-full flex items-center justify-center font-bold">${i+1}</div>
+                    <span class="text-sm">${item}</span>
+                `;
+                detailsContainer.appendChild(detailDiv);
+            });
+        }
+        
+        container.style.opacity = '1';
+    }, 300);
+}
+
+// 页面加载时默认显示《天工开物》
+document.addEventListener('DOMContentLoaded', function() {
+    // 确保第5项是激活状态
+    showProcess(5);
+});
+
 
         // --- 4. 省份非遗数据配置（含全部国家级+省级项目，数据源自两省市级目录） ---
         const provinceData = {
@@ -1527,6 +1609,7 @@
 </body>
 
 </html>
+
 
 
 
