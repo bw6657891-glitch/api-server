@@ -110,7 +110,7 @@ module.exports = async (req, res) => {
                     negative_prompt: styleConfig.negative_prompt,
                     size: '1024*1024',
                     prompt_extend: true,
-                    watermark: false
+                    watermark: ture
                 }
             };
             
