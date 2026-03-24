@@ -7,22 +7,22 @@ const BASE_URL = 'https://dashscope.aliyuncs.com/api/v1';
 // 风格配置
 const STYLE_CONFIGS = {
     '徽州生宣': {
-        model: 'qwen-image-edit-max',
+        model: 'qwen-image-edit-plus',
         positive_prompt: '将图片转换为中国传统水墨画风格，使用徽州生宣纸质感。墨色自然晕染，宣纸纹理清晰可见。保持原图的主体、构图和内容完全不变，只改变绘画风格和纸张纹理。',
         negative_prompt: '低质量，模糊，变形，不自然，现代风格，西方绘画，油画，水彩画，彩色照片，3D渲染'
     },
     '贵州皮纸': {
-        model: 'qwen-image-edit-max',
+        model: 'qwen-image-edit-plus',
         positive_prompt: '将图片转换为中国传统水墨画风格，使用贵州皮纸质感。体现粗犷纤维纹理和枯笔飞白效果。保持原图的主体、构图和内容完全不变，只改变绘画风格和纸张纹理。',
         negative_prompt: '低质量，模糊，变形，不自然，现代风格，西方绘画，油画，水彩画，彩色照片，3D渲染，光滑表面'
     },
     '棠岙竹纸': {
-        model: 'qwen-image-edit-max',
+        model: 'qwen-image-edit-plus',
         positive_prompt: '将图片转换为中国传统水墨画风格，使用棠岙竹纸质感。体现细腻竹纤维和温润米黄色纸面。保持原图的主体、构图和内容完全不变，只改变绘画风格和纸张纹理。',
         negative_prompt: '低质量，模糊，变形，不自然，现代风格，西方绘画，油画，水彩画，彩色照片，3D渲染，粗糙纹理'
     },
     '西北毛边': {
-        model: 'qwen-image-edit-max',
+        model: 'qwen-image-edit-plus',
         positive_prompt: '将图片转换为中国传统水墨画风格，使用西北毛边纸质感。体现纸质松软和边缘自然毛糙感。保持原图的主体、构图和内容完全不变，只改变绘画风格和纸张纹理。',
         negative_prompt: '低质量，模糊，变形，不自然，现代风格，西方绘画，油画，水彩画，彩色照片，3D渲染，整齐边缘'
     }
